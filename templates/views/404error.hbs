@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+    {{>navbar}}
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-12 col-12 d-flex flex-column align-items-center mx-auto">
+
+              <figure>
+                <img src="images/404error.svg"  class = "error_fig" alt="404error page">
+              </figure>
+              <h1>{{error_msg}}</h1>
+              <h3 class="fs-1 text text-danger">
+                <i class="bi bi-emoji-frown-fill text-warning fw-bold"></i>
+                Sorry, that page is missing.
+              </h3>
+
+        </div>  <!--//col ends here. -->
+      </div> <!--//row of home_page ends here. -->
+    </div>   <!--//container-fluid or home_page ends here. -->
+
+    {{>footer}}
+
+    {{>scriptlinks}}
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+      {{>navbar}}
+
+     <div class="container-fluid home_page">
+       <div class="row">
+         <div class="col-md-10 col-12 mx-auto">
+
+           <div class="weather_main_content">
+             <form class="weather_form" >
+               <input type="text" id="cityname" placeholder="Enter The City Name" autocomplete="off">
+               <!-- <input type="submit"  value="search" id="submitButton"> -->
+               <button type="submit" name="button" id="submitButton"><i class="bi bi-search"></i></button>
+             </form>
+           </div> <!-- weather_main_content ends here -->
+
+           <div class="temp_info">
+             <div class="time_layer">
+               <p class="day"></p>
+               <p class="dates"></p>
+             </div> <!--time_layer ends here -->
+             <div class="main_layer">
+               <p id="city_name" >Get Output Here</p>
+               <div class="middle_layer">
+                 <p id = "temp" class="data_hide"><span class="deg_cel"></span><sup> o</sup>C</p>
+                 <p id = "temp_status" class="data_hide"><i class="bi bi-cloud-fill text-primary"></i></p>
+
+               </div>
+             </div>
+           </div> <!-- temp_info ends here -->
+
+         </div>  <!--//col ends here. -->
+
+       </div> <!--//row of home_page ends here. -->
+
+     </div>   <!--//container-fluid or home_page ends here. -->
+     {{>footer}}
+
+     {{>scriptlinks}}
+  </body>
+</html>
